@@ -1,3 +1,4 @@
+//Creating an object to fetch and display data
 let weather = {
    
    fetchWeather: function (city){
@@ -6,6 +7,7 @@ let weather = {
     .then((data) => this.displayWeather(data))
    },
 
+//Displaying the weather
    displayWeather: function(data){
     const {name} = data;
     const {icon,description} = data.weather[0];
@@ -20,16 +22,19 @@ let weather = {
     document.querySelector(".humidity").innerText = "Humdity:" + humidity + "%"
     document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/?${name})`
    },
+
+   //A function to that is called to add Event LIstener
    search: function(){
     this.fetchWeather(document.querySelector(".search-bar").value)
    }
 };
+ //Adding an Event Listener to the Enter Key 
 document.querySelector(".search-bar").addEventListener("keyup", (event) => {
     if(event.key === "Enter"){
         weather.search();
     }
 })
-
+ //Adding an Event Listener to the Search icon
 document.querySelector(".search button").addEventListener("click", () => {
     weather.search();
 });
