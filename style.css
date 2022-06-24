@@ -1,13 +1,13 @@
 .card {
     align-items: center;
-    background: #141111d0;
+    background: #7e6e6ed0;
     padding: 2em;
     border-radius: 40px;
     width: 100%;
     max-width: 420px;
     text-align: center;
     margin: 0.5em;
-    color: white;
+    color: rgb(7, 4, 4);
     margin: 0 auto; 
     float: none; 
     margin-bottom: 10px; 
@@ -19,7 +19,7 @@ body {
     font-style: 'Open Sans', sans-serif;
     justify-content: center;
     align-items: center;
-    background: #dbb2b2d0;
+    background: #252020d0;
     margin: 0;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
@@ -40,18 +40,18 @@ input.search-bar {
     outline: none;
     padding: 0.5em;
     border-radius: 40px;
-    color: black;
+    color: rgb(7, 7, 7);
     font-style: inherit;
     font-family: sans-serif;
     font-size: 100%;
     height: 25px;
-    background: #d3cccc54;
-    transition: 0.2s ease-in-out;
+    background: #201b1b54;
+    transition: 0.3s ease-in-out;
     
 }
 
 button:hover {
-    background: white;
+    background: rgb(240, 233, 233);
 }
 
 
@@ -71,7 +71,7 @@ input.search-bar {
     font-size: 100%;
     height: 25px;
     background: #d3cccc54;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 button {
@@ -80,7 +80,7 @@ button {
     border: none;
     height: 40px;
     outline: none;
-    background: #d3cccc54;
+    background: #2e252554;
     width: 40px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
