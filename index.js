@@ -18,7 +18,7 @@ let weather = {
     document.querySelector(".temp").innerText = temp + "°C"
     document.querySelector(".wind").innerText = "Wind Speed:" + speed + "km/h"
     document.querySelector(".humidity").innerText = "Humdity:" + humidity + "%"
-    document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/?${name},tourism)`
+    document.body.style.backgroundImage = `url(https://source.unsplash.com/1600x900/?${name})`
    },
    search: function(){
     this.fetchWeather(document.querySelector(".search-bar").value)
